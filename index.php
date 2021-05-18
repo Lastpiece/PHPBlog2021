@@ -1,3 +1,4 @@
+<?php require 'config/autoloader.php'  ?>
 <!DOCTYPE html>
 <html lang="en">
 
