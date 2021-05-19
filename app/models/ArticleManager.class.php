@@ -35,16 +35,16 @@
             return new Article($row);
         }
 
-        function getAllArticles(){
-            $articles = [];
+        // function getAllArticles(){
+        //     $articles = [];
 
-            $req = $this->db->prepare('SELECT FROM articles ORDER BY created_at DESC');
-            $req->execute();
-            $result = $req->fetchAll();
+        //     $req = $this->db->prepare('SELECT * FROM article ORDER BY created_at DESC');
+        //     $req->execute();
+        //     $result = $req->fetchAll();
 
-            foreach($result as $row){
-                $id = $row['id'];
-                $articles[$id] = $this->buildArticle($row);
-            }
-        }
+        //     foreach($result as $row){
+        //         $id = $row['id'];
+        //         $articles[$id] = $this->buildArticle($row);
+        //     }
+        // }
     }
